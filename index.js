@@ -173,6 +173,94 @@ let colors ={};
         }
         return mappedStr;
 };
+colors.setTheme = {
+    silly: ['rainbow'],
+    input: ['grey'],
+    verbose: ['cyan'],
+    prompt: ['grey'],
+    info: ['green'],
+    data: ['grey'],
+    help: ['cyan'],
+    warn: ['yellow'],
+    debug: ['blue'],
+    error: ['red'],
+    custom:['whiteBG']
+};
+    colors.error = function (str) {
+        for (let i = 0; i<colors.setTheme.error.length;i++){
+            str = colors.stylize(str,colors.setTheme.error[i]);
+        }
+
+        return   str;
+    };
+
+    colors.debug = function (str) {
+        for (let i = 0; i<colors.setTheme.debug.length;i++){
+        str = colors.stylize(str,colors.setTheme.debug[i]);
+        }
+        return str;
+    };
+
+    colors.warn = function (str) {
+        for (let i = 0; i<colors.setTheme.warn.length;i++){
+            str = colors.stylize(str,colors.setTheme.warn[i]);
+        }
+        return str;
+    };
+    colors.help = function (str) {
+        for (let i = 0; i<colors.setTheme.help.length;i++){
+            str = colors.stylize(str,colors.setTheme.help[i]);
+        }
+        return str;
+    };
+
+    colors.data = function (str) {
+        for (let i = 0; i<colors.setTheme.data.length;i++){
+            str = colors.stylize(str,colors.setTheme.data[i]);
+        }
+        return str;
+    };;
+
+    colors.info = function (str) {
+        for (let i = 0; i<colors.setTheme.info.length;i++){
+            str = colors.stylize(str,colors.setTheme.info[i]);
+        }
+        return str;
+    };
+
+    colors.prompt = function (str) {
+        for (let i = 0; i<colors.setTheme.prompt.length;i++){
+            str = colors.stylize(str,colors.setTheme.prompt[i]);
+        }
+        return str;
+    };
+
+    colors.verbose = function (str) {
+        for (let i = 0; i<colors.setTheme.verbose.length;i++){
+            str = colors.stylize(str,colors.setTheme.verbose[i]);
+        }
+        return str;
+    };
+
+    colors.input = function (str) {
+        for (let i = 0; i<colors.setTheme.input.length;i++){
+            str = colors.stylize(str,colors.setTheme.input[i]);
+        }
+        return str;
+    };
+
+    colors.silly = function (str) {
+        for (let i = 0; i<colors.setTheme.silly.length;i++){
+            str = colors.stylize(str,colors.setTheme.silly[i]);
+        }
+        return str;
+    };
+    colors.custom= function (str) {
+        for (let i = 0; i<colors.setTheme.custom.length;i++){
+            str = colors.stylize(str,colors.setTheme.custom[i]);
+        }
+        return str;
+    };
 
     export {colors}
 
